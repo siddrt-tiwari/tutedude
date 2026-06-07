@@ -42,7 +42,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/siddharth/tutedude/Flask Frontend and Express Backend/k8s/frontend",
+    "last_opened_file_path": "/Users/siddharth/tutedude",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
     "vue.rearranger.settings.migration": "true"
@@ -50,6 +50,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Flask Frontend and Express Backend/k8s/frontend" />
       <recent name="$PROJECT_DIR$/Flask Frontend and Express Backend/k8s/backend" />
     </key>

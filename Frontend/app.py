@@ -3,7 +3,7 @@ import requests
 
 app = Flask(__name__)
 
-BACKEND_URL = "http://express-backend:3000/api/submit"
+BACKEND_URL = "http://localhost:3000/api/submit"
 
 @app.route("/", methods=["GET", "POST"])
 def home():
