@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request
 import requests
+import os
 
 app = Flask(__name__)
 
-BACKEND_URL = "http://13.232.25.157:3000/api/submit"
+BACKEND_URL = os.getenv("BACKEND_URL")
 
 @app.route("/", methods=["GET", "POST"])
 def home():
