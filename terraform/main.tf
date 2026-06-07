@@ -34,17 +34,17 @@ resource "aws_security_group" "app_sg" {
 }
 resource "aws_instance" "app_server" {
 
-  ami           = data.aws_ami.ubuntu.id
+  ami           = var.ami_id
   instance_type = var.instance_type
   key_name      = var.key_name
 
   vpc_security_group_ids = [
-    aws_security_group.assignment_sg.id
+    aws_security_group.app_sg.id
   ]
 
-  user_data = file("${path.module}/user.sh")
+  user_data = file("${path.module}/userdata.sh")
 
   tags = {
-    Name = "Flask-Express-Terraform Assignment"
+    Name = "Flask-Express-Terraform-Assignment"
   }
 }

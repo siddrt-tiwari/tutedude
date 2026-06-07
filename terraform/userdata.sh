@@ -22,12 +22,12 @@ apt-get update -y
 
 #########################################
 
-apt-get install -y
-git
-curl
-python3
-python3-pip
-python3-venv
+apt-get install -y \
+    git \
+    curl \
+    python3 \
+    python3-pip \
+    python3-venv
 
 #########################################
 
@@ -47,7 +47,7 @@ apt-get install -y nodejs
 
 cd /opt
 
-git clone YOUR_GITHUB_REPO_URL app
+git clone https://github.com/siddrt-tiwari/tutedude.git app
 
 #########################################
 
@@ -55,7 +55,7 @@ git clone YOUR_GITHUB_REPO_URL app
 
 #########################################
 
-cd /opt/app/backend
+cd /opt/app/Backend
 
 npm install
 
@@ -67,7 +67,7 @@ nohup npm start > /var/log/backend.log 2>&1 &
 
 #########################################
 
-cd /opt/app/frontend
+cd /opt/app/Frontend
 
 python3 -m venv venv
 
